@@ -130,10 +130,10 @@ const CustomerTable = () => {
     let currentId: string | null = id;
     let depth = 0;
     while (currentId && depth < 5) {
-      const cat = categories[currentId];
-      if (!cat) break;
-      parts.unshift(cat.name);
-      currentId = cat.parent_id;
+      const categoryNode: Category | undefined = categories[currentId];
+      if (!categoryNode) break;
+      parts.unshift(categoryNode.name);
+      currentId = categoryNode.parent_id;
       depth++;
     }
     return parts.length > 0 ? parts.join(' > ') : 'Unknown';
