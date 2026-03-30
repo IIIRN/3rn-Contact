@@ -31,8 +31,8 @@ const Sidebar = () => {
             <Layers size={20} className="text-brand-white" />
           </div>
           <div>
-            <h1 className="text-base font-black text-brand-dark tracking-tighter leading-none">POWERTECH</h1>
-            <p className="text-[8px] font-black uppercase tracking-[.25em] text-brand-green mt-0.5">Enterprise</p>
+            <h1 className="text-base font-black text-brand-dark tracking-tighter leading-none">พาวเวอร์เทค</h1>
+            <p className="text-[8px] font-black uppercase tracking-[.25em] text-brand-green mt-0.5">เอนจิเนียริ่ง</p>
           </div>
         </div>
       </div>
