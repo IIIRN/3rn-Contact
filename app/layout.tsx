@@ -12,8 +12,8 @@ const sarabun = Sarabun({
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
-  title: "Corporate | Data Management System",
-  description: "Enterprise Customer and Employee Data Management System",
+  title: "รายชื่อลูกค้าและพนักงาน",
+  description: "ระบบจัดการรายชื่อลูกค้าและพนักงานสำหรับธุรกิจของคุณ",
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
