@@ -27,17 +27,15 @@ const getPrimaryPhoneDisplay = (customer: CustomerRecord) => {
 const getSummaryDetail = (customer: CustomerRecord) => customer.details || customer.map_location || 'ไม่มีรายละเอียด';
 
 const buildCustomerShareText = (customer: CustomerRecord) => {
-  const lines = [
-    customer.name,
-    customer.contact_name ? `ผู้ติดต่อ: ${customer.contact_name}` : '',
-    customer.phone ? `เบอร์หลัก: ${formatPhoneDisplay(customer.phone)}` : '',
-    customer.backup_phone ? `เบอร์สำรอง: ${formatPhoneDisplay(customer.backup_phone)}` : '',
-    customer.map_location ? `สถานที่: ${customer.map_location}` : '',
-    customer.map_link ? `แผนที่: ${customer.map_link}` : '',
-    customer.details ? `รายละเอียด: ${customer.details}` : '',
-  ];
-
-  return lines.filter(Boolean).join('\n');
+  return [
+    `ชื่อลูกค้า: ${customer.name || '-'}`,
+    `ชื่อผู้ติดต่อ: ${customer.contact_name || '-'}`,
+    `เบอร์หลัก: ${customer.phone ? formatPhoneDisplay(customer.phone) : '-'}`,
+    `เบอร์สำรอง: ${customer.backup_phone ? formatPhoneDisplay(customer.backup_phone) : '-'}`,
+    `แผนที่ / สถานที่: ${customer.map_location || '-'}`,
+    `ลิ้งแผนที่: ${customer.map_link || '-'}`,
+    `รายละเอียดและบันทึก: ${customer.details || '-'}`,
+  ].join('\n');
 };
 
 const EmployeeHomePage = () => {
