@@ -2,12 +2,11 @@ import type { Metadata } from "next";
 import { Sarabun } from "next/font/google";
 import "./globals.css";
 
-// Configure Sarabun with a CSS Variable
-const sarabun = Sarabun({ 
+const sarabun = Sarabun({
   subsets: ["thai", "latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
   display: "swap",
-  variable: '--font-sarabun', // Add CSS variable
+  variable: "--font-sarabun",
 });
 
 export const metadata: Metadata = {
@@ -20,7 +19,12 @@ export const metadata: Metadata = {
       { url: "/icon.svg", type: "image/svg+xml" },
     ],
     shortcut: "/favicon.ico",
-    apple: "/apple-icon.svg",
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+  },
+  appleWebApp: {
+    capable: true,
+    title: "Powertech Contacts",
+    statusBarStyle: "default",
   },
 };
 
