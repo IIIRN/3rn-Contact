@@ -11,6 +11,7 @@ const sarabun = Sarabun({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
   title: "Corporate | Data Management System",
   description: "Enterprise Customer and Employee Data Management System",
 };
