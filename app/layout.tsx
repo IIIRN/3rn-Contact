@@ -11,19 +11,19 @@ const sarabun = Sarabun({
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
-  title: "รายชื่อลูกค้าและพนักงาน",
-  description: "ระบบจัดการรายชื่อลูกค้าและพนักงานสำหรับธุรกิจของคุณ",
+  title: "Man Contacts",
+  description: "Business contact and employee directory management system.",
+  manifest: "/manifest.webmanifest",
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
       { url: "/icon.svg", type: "image/svg+xml" },
     ],
     shortcut: "/favicon.ico",
-    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
   },
   appleWebApp: {
     capable: true,
-    title: "Powertech Contacts",
+    title: "Man Contacts",
     statusBarStyle: "default",
   },
 };
