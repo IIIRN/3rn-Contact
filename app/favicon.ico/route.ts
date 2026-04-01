@@ -7,15 +7,17 @@ const faviconSvg = `
     </linearGradient>
   </defs>
   <rect width="64" height="64" rx="15" fill="url(#bg)"/>
-  <rect x="11" y="15" width="42" height="34" rx="6" fill="#F8FAFC"/>
-  <rect x="15" y="19" width="11" height="11" rx="3" fill="#D9F99D"/>
-  <path d="M19.5 27C19.5 24.5147 21.5147 22.5 24 22.5C26.4853 22.5 28.5 24.5147 28.5 27C28.5 29.4853 26.4853 31.5 24 31.5C21.5147 31.5 19.5 29.4853 19.5 27Z" fill="#166534"/>
-  <rect x="30" y="21" width="16" height="4" rx="2" fill="#0F172A" fill-opacity="0.9"/>
-  <rect x="30" y="28" width="13" height="3" rx="1.5" fill="#64748B"/>
-  <rect x="15" y="38" width="28" height="3.5" rx="1.75" fill="#CBD5E1"/>
-  <circle cx="47" cy="43" r="9" fill="#166534"/>
-  <path d="M45.5 39.5L49.5 43.5L45.5 47.5" stroke="#F8FAFC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M40.5 43.5H48.5" stroke="#F8FAFC" stroke-width="3" stroke-linecap="round"/>
+  <rect x="11.5" y="15" width="41" height="34" rx="5" fill="#F8FAFC"/>
+  <rect x="15.25" y="19.25" width="9.75" height="9.75" rx="3" fill="#D9F99D"/>
+  <path d="M18.625 25.625C18.625 23.623 20.248 22 22.25 22C24.252 22 25.875 23.623 25.875 25.625C25.875 27.627 24.252 29.25 22.25 29.25C20.248 29.25 18.625 27.627 18.625 25.625Z" fill="#166534"/>
+  <path d="M17.125 32.75C17.125 30.6789 18.8039 29 20.875 29H23.625C25.6961 29 27.375 30.6789 27.375 32.75V33.75H17.125V32.75Z" fill="#166534"/>
+  <rect x="29" y="20.75" width="16.5" height="2.75" rx="1.375" fill="#0F172A" fill-opacity="0.88"/>
+  <rect x="29" y="25.75" width="13.75" height="2.25" rx="1.125" fill="#64748B"/>
+  <rect x="15.25" y="37.75" width="30.25" height="2.5" rx="1.25" fill="#CBD5E1"/>
+  <rect x="15.25" y="42" width="22.5" height="2.5" rx="1.25" fill="#E2E8F0"/>
+  <circle cx="47.125" cy="43.125" r="7" fill="#166534"/>
+  <path d="M45.75 40.375L48.75 43.125L45.75 45.875" stroke="#F8FAFC" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M42 43.125H48.5" stroke="#F8FAFC" stroke-width="2.25" stroke-linecap="round"/>
 </svg>
 `.trim();
 
